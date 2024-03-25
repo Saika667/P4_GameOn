@@ -1,0 +1,21 @@
+#toaster {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -150px;
+    background-color: white;
+    box-shadow: 0px 0px 15px 5px #464646;
+    color: green;
+    border-radius: 7px;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    z-index: 999;
+    text-align: center;
+    transform: translateY(0);
+    transition: all 500ms linear;
+}
+
+#toaster.show {
+    transform: translateY(170px);
+}
