@@ -36,8 +36,11 @@ closeButton[0].addEventListener('click', function() {
 })
 
 // regex for validate input
-const regexNames = new RegExp(/^[A-Za-z]{2,}$/);
+//N'accepte que des lettres, les accents, les espaces et le tiret ("-") et minimum 2 caractères
+const regexNames = new RegExp(/^[A-Za-zÀ-ÿ\s\-]{2,}$/);
+//N'accepte que des chiffres
 const regexNum = new RegExp(/^\d+$/);
+//accepte s'il y a une suite de caractère avant et après le @ et que cette string se termine d'un point suivi d'au moins 2 caractères
 const regexEmail = new RegExp(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/);
 
 /*---------------------------------- Validation de donnée ---------------------------------*/
